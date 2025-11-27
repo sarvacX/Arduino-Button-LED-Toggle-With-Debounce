@@ -89,18 +89,16 @@ The LED still worked but appeared dim. For proper brightness and safety, use a *
 ## 🔄 Simple Logic Flow
 
 Start
-│
-│
-Button Pressed?
-├── Yes → Change LED State
-│ ├── If LED was OFF → Turn ON
-│ └── If LED was ON → Turn OFF
-│
-│
-(Wait briefly to debounce)
-│
+->
+(Button Pressed?
+(Yes → Change LED State?
+ If LED was OFF → Turn ON:
+ If LED was ON → Turn OFF))
+->
+Wait briefly to debounce
+->
 Return to checking button
-│
+->
 End
 
 ## 💻 Code Explanation
